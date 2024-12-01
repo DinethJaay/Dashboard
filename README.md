@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+User Dashboard
+A modern and professional user dashboard built using React, Material-UI (MUI), and Chart.js. This dashboard displays key user statistics, including total and active users, and a breakdown of users by location. The dashboard also includes interactive charts and a table to view user activities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Total Users & Active Users: Displayed in separate cards with badge indicators.
+Users by Location: Organized and displayed professionally using cards with location-based user counts.
+Data Trends: Interactive charts showing user registration trends and activity counts.
+User Activities Table: A paginated table displaying user activities with filtering by status.
+Technologies Used
+React: For building the interactive UI.
+Material-UI (MUI): For modern design components and layout.
+react-chartjs-2 & Chart.js: For creating interactive line and bar charts.
+Axios: For making API calls to fetch user data.
+Setup & Installation
+1. Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/user-dashboard.git
+cd user-dashboard
+2. Install Dependencies
+Make sure you have Node.js and npm installed on your machine. If not, you can download and install them from here.
 
-## Available Scripts
+Install the required dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+npm install
+This will install all the necessary packages listed in package.json, including Material-UI, react-chartjs-2, and Axios.
 
-### `npm start`
+3. Running the Application
+Once the dependencies are installed, you can start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+This will start the application at http://localhost:3000 in your browser. You should see the dashboard with the following features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Total Users
+Active Users
+Users by Location
+Data Trends (Line and Bar charts)
+User Activities Table (Paginated)
+Folder Structure
+bash
+Copy code
+/src
+  /components
+    UserStatistics.jsx       # Displays user statistics and location breakdown
+    DataTrendsChart.jsx      # Displays charts (line and bar) for data trends
+    ActivitiesTable.jsx      # Displays a paginated table of user activities
+  /utils
+    api.js                  # Contains API calls to fetch data (mocked for now)
+  App.jsx                   # Main component, rendering the layout
+  index.js                  # Entry point for the React app
+API
+This project uses a mock API to fetch user data. The API endpoints used are:
 
-### `npm test`
+Users: https://jsonplaceholder.typicode.com/users
+User Activities: https://jsonplaceholder.typicode.com/todos
+These APIs provide mock data for demonstration purposes. You can replace them with your own real API if needed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Development Notes
+UserStatistics: Displays total users, active users, and users by location.
+DataTrendsChart: Displays line and bar charts showing user registration trends and activity counts.
+ActivitiesTable: Displays a paginated table with user activities, showing status (completed or pending).
+Customization
+You can customize the following aspects of the dashboard:
 
-### `npm run build`
+Data Fetching: Modify the API calls in api.js to fetch data from your backend.
+Chart Data: Adjust the chart data in DataTrendsChart.jsx to reflect real user trends.
+Future Improvements
+Add authentication and user roles to make the dashboard more dynamic.
+Integrate with a real backend API to fetch live data.
+Add more interactivity such as filtering and sorting for the activities table.
+Contributing
+Feel free to fork the repository and submit pull requests for any improvements or fixes. If you encounter any issues, please open an issue.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
