@@ -1,18 +1,26 @@
-User Dashboard
-A modern and professional user dashboard built using React, Material-UI (MUI), and Chart.js. This dashboard displays key user statistics, including total and active users, and a breakdown of users by location. The dashboard also includes interactive charts and a table to view user activities.
+# User Dashboard
 
-Features
-Total Users & Active Users: Displayed in separate cards with badge indicators.
-Users by Location: Organized and displayed professionally using cards with location-based user counts.
-Data Trends: Interactive charts showing user registration trends and activity counts.
-User Activities Table: A paginated table displaying user activities with filtering by status.
-Technologies Used
-React: For building the interactive UI.
-Material-UI (MUI): For modern design components and layout.
-react-chartjs-2 & Chart.js: For creating interactive line and bar charts.
-Axios: For making API calls to fetch user data.
-Setup & Installation
-1. Clone the Repository
+A modern and professional user dashboard built using **React**, **Material-UI (MUI)**, and **Chart.js**. This dashboard displays key user statistics, including total and active users, and a breakdown of users by location. The dashboard also includes interactive charts and a table to view user activities.
+
+## Features
+
+- **Total Users & Active Users**: Displayed in separate cards with badge indicators.
+- **Users by Location**: Organized and displayed professionally using cards with location-based user counts.
+- **Data Trends**: Interactive charts showing user registration trends and activity counts.
+- **User Activities Table**: A paginated table displaying user activities with filtering by status.
+
+## Technologies Used
+
+- **React**: For building the interactive UI.
+- **Material-UI (MUI)**: For modern design components and layout.
+- **react-chartjs-2 & Chart.js**: For creating interactive line and bar charts.
+- **Axios**: For making API calls to fetch user data.
+
+## Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/your-username/user-dashboard.git
 cd user-dashboard
 2. Install Dependencies
