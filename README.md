@@ -13,8 +13,6 @@ react-chartjs-2 & Chart.js: For creating interactive line and bar charts.
 Axios: For making API calls to fetch user data.
 Setup & Installation
 1. Clone the Repository
-bash
-Copy code
 git clone https://github.com/your-username/user-dashboard.git
 cd user-dashboard
 2. Install Dependencies
